@@ -7,14 +7,14 @@ import { faFacebookF, faTwitter, faGithub, faLinkedinIn } from '@fortawesome/fre
 
 const Inicio = () => {
   return (
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
+    <section id="inicio" className="inicio">
+        <div className="contenido-banner">
+            <div className="contenedor-img">
                 <img src={hero} alt=""/>
             </div>
             <h1>Facundo Nuñez</h1>
             <h2>Dev Fullstack Web </h2>
-            <div class="redes">
+            <div className="redes">
                 <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
                 <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
                 <a href="#"><FontAwesomeIcon icon={faGithub} /></a>

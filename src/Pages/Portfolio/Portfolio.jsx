@@ -10,48 +10,48 @@ import cotizador from '../../assets/P6.png';
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
+    <section id="portfolio" className="portfolio">
+        <div className="contenido-seccion">
             <h2>PORTFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
+            <div className="galeria">
+                <div className="proyecto">
                     <img src={aPP} alt=""/>
-                    <div class="overlay">
+                    <div className="overlay">
                         <h3>App - Administrador de Pacientes</h3>
                         <p>Fotografía</p>
                     </div>
                 </div>
-                <div class="proyecto">
+                <div className="proyecto">
                     <img src={landi} alt=""/>
-                    <div class="overlay">
+                    <div className="overlay">
                         <h3>Landing Page</h3>
                         <p>Fotografía</p>
                     </div>
                 </div>
-                <div class="proyecto">
+                <div className="proyecto">
                     <img src={chatbeat} alt=""/>
-                    <div class="overlay">
+                    <div className="overlay">
                         <h3>ChatBeat</h3>
                         <p>Fotografía</p>
                     </div>
                 </div>
-                <div class="proyecto">
+                <div className="proyecto">
                     <img src={ecommerce} alt=""/>
-                    <div class="overlay">
+                    <div className="overlay">
                         <h3>Proyect-ecommerce</h3>
                         <p>Fotografía</p>
                     </div>
                 </div>
-                <div class="proyecto">
+                <div className="proyecto">
                     <img src={actual} alt=""/>
                     <div class="overlay">
                         <h3>Diseño Creativo</h3>
                         <p>Fotografía</p>
                     </div>
                 </div>
-                <div class="proyecto">
+                <div className="proyecto">
                     <img src={cotizador} alt=""/>
-                    <div class="overlay">
+                    <div className="overlay">
                         <h3>Cotizador-Prestamos</h3>
                         <p>Fotografía</p>
                     </div>

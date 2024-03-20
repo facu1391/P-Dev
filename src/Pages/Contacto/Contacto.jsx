@@ -1,39 +1,41 @@
 import React from 'react';
 import './Contacto.css';
 
-import ubicacion from '../../assets/ubicacion.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane, faLocationDot, faMobileScreen, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import ubicacion from '../../assets/ubicacion.png';
 
 const Contacto = () => {
   return (
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
+    <section id="contacto" className="contacto">
+        <div className="contenido-seccion">
             <h2>CONTACTO</h2>
-            <div class="fila">
-                <div class="col">
+            <div className="fila">
+                <div className="col">
                     <input type="text" placeholder="Tú Nombre"/>
                     <input type="text" placeholder="Número telefónico"/>
                     <input type="text" placeholder="Dirección de correo"/>
                     <input type="text" placeholder="Tema"/>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
                     <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
+                        Enviar Mensaje<FontAwesomeIcon icon={faPaperPlane} />
+                        <span className="overlay"></span>
                     </button>
                 </div>
-                <div class="col">
+                <div className="col">
                     <img src={ubicacion} alt=""/>
-                    <div class="info">
+                    <div className="info">
                         <ul>
                             <li>
-                                <i class="fa-solid fa-location-dot"></i>
+                                <FontAwesomeIcon icon={faLocationDot} />
                                 San Roman 1546, La Rioja
                             </li>
                             <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
+                                <FontAwesomeIcon icon={faMobileScreen} />
                                 Llamame: 3804 - 249741 
                             </li>
                             <li>
-                                <i class="fa-solid fa-envelope"></i>
+                                <FontAwesomeIcon icon={faEnvelope} />
                                 Email: facurael@gmail.com
                             </li>
                         </ul>
@@ -45,4 +47,4 @@ const Contacto = () => {
   )
 }
 
-export default Contacto
+export default Contacto;
