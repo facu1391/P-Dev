@@ -6,6 +6,7 @@ import SobreMi from '../Pages/SobreMi/SobreMi';
 import Skills from '../Pages/Skills/Skills';
 import Curriculum from '../Pages/Curriculum/Curriculum';
 import Portfolio from '../Pages/Portfolio/Portfolio';
+import Contacto from '../Pages/Contacto/Contacto';
 
 const Layout = ({ children }) => {
   return (
@@ -16,6 +17,7 @@ const Layout = ({ children }) => {
       <Skills />
       <Curriculum />
       <Portfolio />
+      <Contacto />
       {children}
       <Footer />
     </>
