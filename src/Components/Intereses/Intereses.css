@@ -1,0 +1,26 @@
+.fila .col .contenedor-intereses {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.fila .col .contenedor-intereses .interes {
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+  
+.fila .col .contenedor-intereses .interes:hover {
+    background-color: #1CB698;
+}
+  
+.fila .col .contenedor-intereses .interes i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,20 @@
+.fila .col ul {
+    list-style: none;
+}
+  
+.fila .col ul li {
+    margin: 12px 0;
+}
+  
+.fila .col ul li strong {
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+  
+.fila .col ul li span {
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}

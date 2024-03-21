@@ -1,4 +1,5 @@
 import React from 'react';
+import Proyecto from '../../Components/Proyecto/Proyecto';
 import './Portfolio.css';
 
 import aPP from '../../assets/P1.png';
@@ -8,58 +9,28 @@ import ecommerce from '../../assets/P4.png';
 import actual from '../../assets/p5.jpg';
 import cotizador from '../../assets/P6.png';
 
+const proyectos = [
+  { imagen: aPP, titulo: 'App - Administrador de Pacientes', categoria: 'Fotografía' },
+  { imagen: landi, titulo: 'Landing Page', categoria: 'Fotografía' },
+  { imagen: chatbeat, titulo: 'ChatBeat', categoria: 'Fotografía' },
+  { imagen: ecommerce, titulo: 'Proyect-ecommerce', categoria: 'Fotografía' },
+  { imagen: actual, titulo: 'Diseño Creativo', categoria: 'Fotografía' },
+  { imagen: cotizador, titulo: 'Cotizador-Prestamos', categoria: 'Fotografía' }
+];
+
 const Portfolio = () => {
   return (
     <section id="portfolio" className="portfolio">
-        <div className="contenido-seccion">
-            <h2>PORTFOLIO</h2>
-            <div className="galeria">
-                <div className="proyecto">
-                    <img src={aPP} alt=""/>
-                    <div className="overlay">
-                        <h3>App - Administrador de Pacientes</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div className="proyecto">
-                    <img src={landi} alt=""/>
-                    <div className="overlay">
-                        <h3>Landing Page</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div className="proyecto">
-                    <img src={chatbeat} alt=""/>
-                    <div className="overlay">
-                        <h3>ChatBeat</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div className="proyecto">
-                    <img src={ecommerce} alt=""/>
-                    <div className="overlay">
-                        <h3>Proyect-ecommerce</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div className="proyecto">
-                    <img src={actual} alt=""/>
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div className="proyecto">
-                    <img src={cotizador} alt=""/>
-                    <div className="overlay">
-                        <h3>Cotizador-Prestamos</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-            </div>
+      <div className="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div className="galeria">
+          {proyectos.map((proyecto, index) => (
+            <Proyecto key={index} {...proyecto} />
+          ))}
         </div>
+      </div>
     </section>
-  )
+  );
 }
 
 export default Portfolio;
