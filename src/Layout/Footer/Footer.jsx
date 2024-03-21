@@ -1,20 +1,16 @@
 import React from 'react';
+import AnglesIcons from '../../Components/AnglesIcons/AnglesIcons';
+import RedesSociales from '../../Components/RedesSociales/RedesSociales';
+
 import './Footer.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
     <footer>
       <a href="#inicio" className="arriba">
-        <i className="fa-solid fa-angles-up"></i>
+        <AnglesIcons />
       </a>
-      <div className="redes">
-        <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
-        <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
-        <a href="#"><FontAwesomeIcon icon={faGithub} /></a>
-        <a href="#"><FontAwesomeIcon icon={faLinkedinIn} /></a>
-      </div>
+      <RedesSociales />
     </footer>
   );
 }
