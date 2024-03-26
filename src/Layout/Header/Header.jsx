@@ -1,37 +1,38 @@
 import React from 'react';
+import { Link } from 'react-scroll';
+
 import './Header.css';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   return (
     <div className="contenedor-header">
       <header>
         <div className="logo">
-          <a href="#">Facundo</a>
+        <Link to="inicio" smooth={true} offset={-70} duration={100}>Facundo</Link>
         </div>
         <nav id="nav">
           <ul>
-            <li><a href="#inicio" onClick={seleccionar}>INICIO</a></li>
-            <li><a href="#sobremi" onClick={seleccionar}>SOBRE MI</a></li>
-            <li><a href="#skills" onClick={seleccionar}>SKILLS</a></li>
-            <li><a href="#curriculum" onClick={seleccionar}>CURRICULUM</a></li>
-            <li><a href="#portfolio" onClick={seleccionar}>PORTFOLIO</a></li>
-            <li><a href="#contacto" onClick={seleccionar}>CONTACTO</a></li>
+          <li><Link to="inicio" smooth={true} offset={-70} duration={100}>INICIO</Link></li>
+            <li><Link to="sobremi" smooth={true} offset={-70} duration={100}>SOBRE MI</Link></li>
+            <li><Link to="skills" smooth={true} offset={-70} duration={100}>SKILLS</Link></li>
+            <li><Link to="curriculum" smooth={true} offset={-70} duration={100}>CURRICULUM</Link></li>
+            <li><Link to="portfolio" smooth={true} offset={-70} duration={100}>PORTFOLIO</Link></li>
+            <li><Link to="contacto" smooth={true} offset={-70} duration={100}>CONTACTO</Link></li>
           </ul>
         </nav>
         <div className="nav-responsive" onClick={mostrarOcultarMenu}>
-          <i className="fa-solid fa-bars"></i>
+          <FontAwesomeIcon icon={faBars} />
         </div>
       </header>
     </div>
   );
 }
 
-function seleccionar() {
- 
-}
-
 function mostrarOcultarMenu() {
- 
+
 }
 
 export default Header;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import Proyecto from '../../Components/Proyecto/Proyecto';
 import './Portfolio.css';
 
@@ -20,7 +21,7 @@ const proyectos = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="portfolio">
+    <Element name="portfolio" className="portfolio">
       <div className="contenido-seccion">
         <h2>PORTFOLIO</h2>
         <div className="galeria">
@@ -29,7 +30,7 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-    </section>
+    </Element>
   );
 }
 

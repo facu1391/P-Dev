@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import './SobreMi.css';
 
 import DatosPersonales from '../../Components/DatosPersonales/DatosPersonales';
@@ -7,7 +8,7 @@ import DescargarCV from '../../Components/DescargarCV/DescargarCV';
 
 const SobreMi = () => {
   return (
-    <section id="sobremi" className="sobremi">
+    <Element name="sobremi" className="sobremi">
       <div className="contenido-seccion">
         <h2>Sobre Mí</h2>
         <p><span>Hola, soy Facundo Nuñez.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
@@ -21,7 +22,7 @@ const SobreMi = () => {
         </div>
         <DescargarCV />
       </div>
-    </section>
+    </Element>
   )
 }
 

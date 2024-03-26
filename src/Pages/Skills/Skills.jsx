@@ -1,4 +1,5 @@
 import React from 'react'
+import { Element } from 'react-scroll';
 import './Skills.css'
 
 import TechnicalSkills from '../../Components/TechnicalSkills/TechnicalSkills';
@@ -6,7 +7,7 @@ import ProfessionalSkills from '../../Components/ProfessionalSkills/Professional
 
 const Skills = () => {
   return (
-    <section className="skills" id="skills">
+    <Element className="skills" name="skills">
       <div className="contenido-seccion">
         <h2>Skills</h2>
         <div className="fila">
@@ -14,7 +15,7 @@ const Skills = () => {
           <ProfessionalSkills />
         </div>
       </div>
-    </section>
+    </Element>
   )
 }
 
