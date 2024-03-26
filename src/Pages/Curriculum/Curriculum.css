@@ -27,3 +27,12 @@
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
+
+@media screen and (max-width:700px) {
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+}

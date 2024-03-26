@@ -21,3 +21,12 @@
     width: 50%;
     padding: 0 20px;
 }
+
+@media screen and (max-width:700px) {
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+}

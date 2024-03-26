@@ -19,6 +19,7 @@
     font-size: 36px;
     color: #1CB698;
     text-decoration: none;
+    cursor: pointer;
 }
 .contenedor-header header ul{
     display: flex;
@@ -31,6 +32,7 @@
     padding: 3px;
     transition: .5s;
     text-decoration: none;
+    cursor: pointer;
 }
 .contenedor-header header nav ul li a:hover{
     color: #1CB698;
@@ -42,4 +44,28 @@
     border-radius: 5px;
     cursor: pointer;
     display: none;
+}
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
 }

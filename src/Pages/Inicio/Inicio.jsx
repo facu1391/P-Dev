@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import RedesSociales from '../../Components/RedesSociales/RedesSociales';
 
 import './Inicio.css';
@@ -6,7 +7,7 @@ import hero from '../../assets/hero.png';
 
 const Inicio = () => {
   return (
-    <section id="inicio" className="inicio">
+    <Element name="inicio" className="inicio">
       <div className="contenido-banner">
         <div className="contenedor-img">
           <img src={hero} alt=""/>
@@ -15,7 +16,7 @@ const Inicio = () => {
         <h2>Dev Fullstack Web</h2>
         <RedesSociales />
       </div>
-    </section>
+    </Element>
   )
 }
 

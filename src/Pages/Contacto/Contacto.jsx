@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import './Contacto.css';
 
 import FormularioContacto from '../../Components/FormularioContacto/FormularioContacto';
@@ -6,7 +7,7 @@ import InformacionContacto from '../../Components/InformacionContacto/Informacio
 
 const Contacto = () => {
   return (
-    <section id="contacto" className="contacto">
+    <Element name="contacto" className="contacto">
         <div className="contenido-seccion">
         <h2>CONTACTO</h2>
         <div className="fila">
@@ -14,7 +15,7 @@ const Contacto = () => {
             <InformacionContacto />
         </div>
         </div>
-   </section>
+   </Element>
   )
 }
 
