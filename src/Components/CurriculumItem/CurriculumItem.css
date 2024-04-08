@@ -28,7 +28,7 @@
     background-color: #1CB698;
     width: 47px;
     position: absolute;
-    top: 50%;
+    top: calc(50% + 30px); 
     right: -47px;
     z-index: 5;
 }
@@ -41,7 +41,7 @@
     background-color: #1CB698;
     float: right;
     position: relative;
-    bottom: 4px;
+    bottom: 4px; 
 }
 
 .item .conectord {
@@ -62,5 +62,5 @@
     background-color: #1CB698;
     float: left;
     position: relative;
-    bottom: 4px;
+    bottom: 4px; 
 }
